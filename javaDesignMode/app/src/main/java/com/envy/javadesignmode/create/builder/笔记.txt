@@ -1,0 +1,9 @@
+Factory-method：需要类继承；
+Abstract-Factory：需要Factory-method来实现一个“有形”的工厂，生产“有形”产品；
+Builder：组合一些“现成”的半成品为一个单一的“成品”。
+
+Abstract-Factory和Builder通过是对“对象”实例进行操作来“生产”的，
+Factory-method需要通过“继承”来建造新的“工厂”才能生产新的产品。
+
+思考：在dialog中存在builder，不存在director（指导者类），是否也是用了创建者模式；应该也属于创建者模式，
+        create方法可以看作director的direct()方法
